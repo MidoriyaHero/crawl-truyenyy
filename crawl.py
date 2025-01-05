@@ -122,10 +122,10 @@ class NovelCrawler:
 
 def main():
     base_url = "https://truyenyy.app/truyen/bat-dau-muoi-lien-rut-sau-do-vo-dich"
-    start_chapter = 450
-    end_chapter = 451
-    chapters_per_file = 10
-    
+    start_chapter = 1
+    end_chapter = 499
+    chapters_per_file = 500
+    #sau này crawl lại từ 1-500, từ 2000-2515
     crawler = NovelCrawler(base_url, start_chapter, end_chapter, chapters_per_file)
     crawler.crawl_and_convert()
 
